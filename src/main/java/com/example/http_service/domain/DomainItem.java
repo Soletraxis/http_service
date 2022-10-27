@@ -1,5 +1,6 @@
 package com.example.http_service.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -31,6 +32,7 @@ public class DomainItem {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "domain_item_id")
+    @JsonIgnoreProperties({"id","createdAt"})
     private List<DomainItemAssociations> items;
 
     @CreatedDate
