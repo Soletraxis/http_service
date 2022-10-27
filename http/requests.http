@@ -3,6 +3,7 @@ Content-Type: application/json
 
 {
   "items": [
-    {"description": "hello"}
+    {"description": "hello"},
+    {"description": "hello2"}
   ]
 }
