@@ -1,0 +1,8 @@
+POST http://localhost:8080/domain_items
+Content-Type: application/json
+
+{
+  "items": [
+    {"description": "hello"}
+  ]
+}
